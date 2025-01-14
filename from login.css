@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1e1e1e; /* Dark terminal background */
+  color: #d4d4d4; /* Soft white text */
+  padding: 20px;
+}
+
+/* Form Container */
+form {
+  background: #252526; /* Slightly lighter background for the form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #3c3c3c;
+}
+
+/* Form Heading */
+form h2 {
+  margin-bottom: 20px;
+  color: #00c8ff; /* Bright cyan accent */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #00c8ff;
+}
+
+/* Form Group */
+form div {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #c586c0; /* Lavender-like text */
+  font-size: 14px;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3c3c3c;
+  border-radius: 5px;
+  background-color: #1e1e1e; /* Terminal-style background */
+  color: #d4d4d4;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Fields Focus */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #00c8ff;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+/* Textarea */
+form textarea {
+  resize: none;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Radio Buttons and Checkboxes */
+form input[type="radio"],
+form input[type="checkbox"] {
+  accent-color: #00c8ff; /* Cyan accent */
+  margin-right: 5px;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #7ab3ff, #b4c9cf);
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button Hover */
+form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #00c8ff, #375bff);
+  transform: translateY(-3px);
+}
+
+/* Remember Me Checkbox */
+form input[type="checkbox"] + label {
+  font-size: 14px;
+  color: #c586c0;
+  cursor: pointer;
+}
+
+/* Code Borders */
+form input,
+form select,
+form textarea {
+  border-left: 3px solid #00c8ff; /* Cyan bar like in VS Code */
+}
+
+/* Glow Effect */
+form h2:hover {
+  text-shadow: 0 0 20px #00c8ff, 0 0 30px #ff00ff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+      padding: 20px;
+  }
+
+  form h2 {
+      font-size: 20px;
+  }
+
+  form label,
+  form input,
+  form textarea,
+  form select {
+      font-size: 14px;
+  }
+
+  form button[type="submit"] {
+      font-size: 14px;
+  }
+}
